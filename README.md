@@ -46,7 +46,7 @@ class prueba
 
   for(int i=0; i < 5 ; i++){
 
-	print("i es mayor que 5");
+   print("i es mayor que 5");
 
   }
 
