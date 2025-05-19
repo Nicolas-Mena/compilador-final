@@ -1,0 +1,146 @@
+-------------------ERRORES ENCONTRADOS-------------------
+
+
+PRIMER ERROR:
+
+
+
+class prueba
+{
+
+	int numero = 5;
+	int numero2 = 6;
+	int numero3 = 7;
+	int numero4 = 8;
+	int resultado = 0;
+
+	if(numero <= numero2 || numero3 >= numero4)
+	{
+
+	resultado = numero + numero2;
+
+	}
+}
+
+
+ERRORES ARROJADOS:
+
+=== ERRORES SINTÁCTICOS ===
+[Sintáctico] Línea 10, Columna 23: Se esperaba ')' después de la condición
+[Sintáctico] Línea 10, Columna 23: Declaración no válida: ||
+[Sintáctico] Línea 10, Columna 34: Se esperaba '=' en la asignación
+[Sintáctico] Línea 10, Columna 34: Declaración no válida: >=
+[Sintáctico] Línea 10, Columna 44: Se esperaba '=' en la asignación
+[Sintáctico] Línea 10, Columna 44: Declaración no válida: )
+[Sintáctico] Línea 11, Columna 2: Declaración no válida: {
+
+
+
+
+SEGUNDO ERROR:
+
+
+
+class prueba
+{
+
+	int numero = 5;
+	int numero2 = 6;
+	int numero3 = 7;
+	int numero4 = 8;
+	int resultado = 0;
+
+	if(numero <= numero2 && numero3 >= numero4)
+	{
+
+	resultado = numero + numero2;
+
+	}
+}
+
+
+ERRORES ARROJADOS:
+
+=== ERRORES SINTÁCTICOS ===
+[Sintáctico] Línea 10, Columna 23: Se esperaba ')' después de la condición
+[Sintáctico] Línea 10, Columna 23: Declaración no válida: &&
+[Sintáctico] Línea 10, Columna 34: Se esperaba '=' en la asignación
+[Sintáctico] Línea 10, Columna 34: Declaración no válida: >=
+[Sintáctico] Línea 10, Columna 44: Se esperaba '=' en la asignación
+[Sintáctico] Línea 10, Columna 44: Declaración no válida: )
+[Sintáctico] Línea 11, Columna 2: Declaración no válida: {
+
+
+
+TERCER ERROR:
+
+
+class prueba{
+
+string hola = "pedro";
+
+}
+}
+
+
+SALE COMPILACION EXITOSA Y DEBERIA LANZAR UN ERROR YA QUE HAY UNA LLAVE QUE NO CIERRA NADA
+
+
+
+CUARTO ERROR:
+
+
+
+class prueba{
+
+string hola = 1;
+
+}
+
+
+
+SALE COMPILACION EXITOSA Y DEBERIA LANZAR UN ERROR YA QUE ES UN NUMERO Y NO UN STRING, (PASA IGUAL CON LOS DATOS TIPO CHAR)
+
+
+
+QUINTO ERROR:
+
+
+class PruebaChar{
+
+char letra = 'X';
+
+}
+
+
+
+ERROR ARROJADO:
+
+=== ERRORES LÉXICOS ===
+[Léxico] Línea 3, Columna 14: Carácter no reconocido: '''
+[Léxico] Línea 3, Columna 16: Carácter no reconocido: '''
+
+NO RECONOCE LAS COMILLAS SIMPLES PARA LOS CHAR Y LAS COMILLAS NORMALES("") TAMPOCO
+
+
+
+SEXTO ERROR: 
+
+
+class PruebaChar{
+
+int letra = X;
+int letra2 = Y;
+int resultado = 0;
+
+
+resultado = letra + letra2;
+
+}
+
+
+SALE COMPILACION EXITOSA Y DEBERIA LANZAR UN ERROR YA QUE LA X Y LA Y NO SON NUMEROS
+
+
+
+
